@@ -63,7 +63,7 @@ public class PlayerCtrl : MonoBehaviour
         //capCol2D.enabled = true;
 
         //curState = "Idle";
-        speed = 6f;
+        speed = 7f;
         timer = 0f;
         //Debug.Log("루프작동!!");
     }

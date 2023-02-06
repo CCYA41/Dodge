@@ -22,20 +22,21 @@ public class StoneMaker : MonoBehaviour
     {
 
         initailize();
-
+        InvokeRepeating("MakeStone", 0.2f, 0.2f);
 
     }
     void Update()
     {
-        MakeStone();
+       // MakeStone();
+        Timer();
     }
     private void MakeStone()
     {
 
         var player = GameObject.FindObjectOfType<PlayerCtrl>();
-        gameTime += Time.deltaTime;
-        targetStoneTimer += Time.deltaTime;
-        randomStoneTimer += Time.deltaTime;
+        //gameTime += Time.deltaTime;
+        //targetStoneTimer += Time.deltaTime;
+        //randomStoneTimer += Time.deltaTime;
 
         if (randomStoneTimer > 0.2 && (player.userState != "DIE"))
         {
@@ -67,5 +68,12 @@ public class StoneMaker : MonoBehaviour
         //stoneY = 0f;
         //screenX = Screen.width;
         //screenY = Screen.height;
+    }
+
+    public void Timer()
+    {
+        gameTime += Time.deltaTime;
+        targetStoneTimer += Time.deltaTime;
+        randomStoneTimer += Time.deltaTime;
     }
 }
