@@ -769,9 +769,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stone: {fileID: 886210889683266857, guid: da3286ddb42a7ba4aa6429e3cfef6e64, type: 3}
-  stoneTimer: 0
+  targetStoneTimer: 0
+  randomStoneTimer: 0
   stoneX: 0
   stoneY: 0
+  randomStoneX: 0
+  gameTime: 0
 --- !u!1001 &1863772498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -779,6 +782,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1435055865756907057, guid: e0529fd79c8060d4fbf08339ed0d7e96, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435055865756907057, guid: e0529fd79c8060d4fbf08339ed0d7e96, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3723489888130563966, guid: e0529fd79c8060d4fbf08339ed0d7e96, type: 3}
       propertyPath: m_Name
       value: Player
