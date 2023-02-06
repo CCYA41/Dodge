@@ -69,7 +69,7 @@ public class PlayerCtrl : MonoBehaviour
     }
     private void PlayerControl()
     {
-        gameTime += Time.deltaTime;
+      //  gameTime += Time.deltaTime;
 
         if (state == STATE.DIE)
         {
@@ -104,7 +104,7 @@ public class PlayerCtrl : MonoBehaviour
 
                 rigi2D.velocity = new Vector3(-speed, 0, 0);
 
-                gameTime = 0;
+              //  gameTime = 0;
 
             }
             if (Input.GetKey("right"))
@@ -114,7 +114,7 @@ public class PlayerCtrl : MonoBehaviour
 
                 rigi2D.velocity = new Vector3(speed, 0, 0);
 
-                gameTime = 0;
+              //  gameTime = 0;
 
             }
             if (rigi2D.velocity.x == 0 && state != STATE.DIE) //curState != "Boom")
